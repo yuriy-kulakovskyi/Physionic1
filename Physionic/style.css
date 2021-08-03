@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat' sans-serif;
+}
+
+.page1 {
+  width: 100%; height: 100vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  padding: 0 100px;
+}
+
+.page1__header {
+  width: 100%; height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.header__left {
+  display: flex;
+}
+
+.nav {
+  margin-left: 40px;
+}
+
+.header__left a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .2px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: .1px;
+  color: #fff;
+}
+
+.btn__get {
+  width: 190px; height: 52px;
+  border-radius: 5px;
+  background-color: #23A6F0;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 3px #23A6F0;
+  cursor: pointer;
+}
+
+.content__right {
+  width: 50%; height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content__left {
+  width: 50%; height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.content__left h4 {
+  margin: 20px 0 40px;
+  color: #fff;
+}
+
+.content__left h1 {
+  letter-spacing: .2px;
+  color: #fff;
+  font-family: 'Martel';
+  font-weight: 900;
+}
+
+.page1__content {
+  display: flex;
+}
+
+a[class="btn_get1"] {
+  padding: 15px 36px;
+  text-decoration: none;
+  background-color: #23A6F0;
+  color: #fff;
+  border-radius: 37px;
+  margin-right: 10px;
+  transition: .6s;
+  width: 351px;
+  text-align: center;
+}
+
+a[class='btn_learn'] {
+  padding: 15px 36px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 37px;
+  text-decoration: none;
+  transition: .6s;
+  width: 351px;
+  text-align: center;
+}
+
+a[class="btn_get1"]:hover {
+  background-color: transparent;
+  color: #23A6F0;
+  border: 2px solid #23A6F0;
+}
+
+a[class='btn_learn']:hover {
+  background-color: #23A6F0;
+  color: #fff;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+}
+
+form {
+  background-color: #fff;
+  width: 90%; height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.heading {
+  color: #252B42;
+  letter-spacing: .1px;
+  font-weight: 700;
+}
+
+form input,
+select {
+  width: 246px; height: 50px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #333;
+}
+
+.btn__book {
+  width: 248px; height: 52px;
+  border-radius: 5px;
+  background-color: #23A6F0;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 3px #23A6F0;
+  cursor: pointer;
+  margin-top: 30px;
+}
