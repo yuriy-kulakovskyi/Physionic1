@@ -6,6 +6,10 @@
   font-family: 'Montserrat' sans-serif;
 }
 
+.wrap {
+  background-color: #fafafa;
+}
+
 .page1 {
   width: 100%; height: 817px;
   background-image: url(images/background.png);
@@ -28,6 +32,10 @@
 .nav {
   margin-left: 40px;
   margin-top: 2px;
+}
+
+.icons__row {
+  display: none;
 }
 
 .header__left a {
@@ -57,6 +65,8 @@
   font-size: 11px;
   letter-spacing: .2px;
   font-family: 'Montserrat';
+  margin-bottom: 0;
+  margin-top: 16px;
 }
 
 .content__right {
@@ -135,7 +145,7 @@ form {
   flex-flow: column;
   margin-top: 60px;
   margin-right: 50px;
-  padding: 40px 0;
+  padding: 80px 0;
   border-radius: 10px;
 }
 
@@ -145,13 +155,19 @@ form {
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 20px;
+  font-family: 'Montserrat';
+}
+
+.book__box {
+  margin-top: 10px;
 }
 
 h6 {
   font-weight: 600;
   font-size: 14px;
   color: #252B42;
-  margin-top: 3px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 form input[type="text"],
@@ -166,6 +182,23 @@ form select {
 
 ::placeholder {
   color: #737373;
+  padding: 11px 141px 11px 11px;
+  letter-spacing: .2px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+form select {
+  padding: 11px;
+}
+
+option {
+  padding: 11px;
+  letter-spacing: .2px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Montserrat';
 }
 
 .btn__book {
@@ -176,11 +209,12 @@ form select {
   border: none;
   box-shadow: 0 0 3px #23A6F0;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .page2 {
   width: 100%; height: 628px;
+  background-color: #fafafa;
 }
 
 .page2__header {
@@ -306,6 +340,7 @@ form select {
 
 .page3 {
   width: 100%; height: 555px;
+  background-color: #fafafa;
 }
 
 .page3__content {
@@ -349,13 +384,14 @@ form select {
 }
 
 .page4 {
-  width: 100%; height: 820px;
+  width: 100%; height: 860px;
+  background-color: #fafafa;
+  margin-top: 60px;
 }
 
 .page4__header {
   width: 100%; height: 107px;
   text-align: center;
-  margin-top: 112px;
 }
 
 .page4__header h2 {
@@ -392,8 +428,11 @@ form select {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-right: 90.5px;
+  margin-right: 40.5px;
   margin-top: 128px;
+  background-color: #fff;
+  width: 333px; height: 151px;
+  border-radius: 5px;
 }
 
 .content .par {
@@ -426,6 +465,8 @@ form select {
 
 .page5 {
   width: 100%; height: 1016px;
+  background-color: #fafafa;
+  margin-top: 160px;
 }
 
 .page5__header {
@@ -563,6 +604,7 @@ button {
   letter-spacing: .2px;
   width: 246px; height: 52px;
   cursor: pointer;
+  margin-bottom: 70px;
 }
 
 .box__main {
@@ -655,6 +697,10 @@ button {
   align-items: flex-start;
   flex-flow: column;
   padding: 80px 0 120px 195px;
+}
+
+.contentt__left h3 {
+  display: none;
 }
 
 .contentt__left h2 { 
@@ -780,6 +826,7 @@ button {
 
 .footer {
   width: 100%; height: 76px;
+  background-color: #fff;
 }
 
 .footer h6 {
@@ -789,4 +836,329 @@ button {
   letter-spacing: .2px;
   text-align: center;
   line-height: 76px;
+}
+
+.subscribe {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px) {
+  .page1 {
+    width: 100%; height: 1801px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .page1__header {
+    background-color: #F6F6F6;
+    width: 100%; height: 532px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: .1px;
+    color: #252B42;
+    margin-right: 50px;
+    position: relative;
+    top: -235px; left: 30px;
+  }
+
+  .header__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .header__left {
+    width: 100%; height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons__row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -245px;
+    margin-right: 40px;
+  }
+
+  .icons__row i {
+    margin-right: 32px;
+    color: #737373;
+    font-size: 24px;
+  }
+
+  .btn__get {
+    display: none;
+  }
+
+  .header__left .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .header__left .nav a {
+    color: #737373;
+    margin-top: 25px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    font-size: 30px;
+  }
+
+  .page1__content {
+    width: 100%; height: 1400px;
+    flex-flow: column;
+    background-image: url('images/background.png');
+    background-size: cover;
+    justify-content: space-around;
+  }
+
+  .content__left,
+  .content__right {
+    width: 100%; height: 220px; 
+  }
+
+  .content__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 328px; height: 613px;
+    margin-top: -369px;
+    margin-right: 0;
+  }
+
+  .content__left h1,
+  .content__left h4 {
+    text-align: center;
+  }
+
+  .content__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: -100px;
+  }
+
+  .content__left .buttons {
+    width: 185px; height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .buttons .btn_get1 {
+    width: 185px; height: 42px;
+    border-radius: 37px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    padding-bottom: 30px;
+  }
+
+  .buttons .btn_learn {
+    width: 154px; height: 42px;
+    border-radius: 37px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    margin-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .page2 {
+    width: 100%; height: 1646px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page2__header {
+    width: 35%; height: 146px;
+    margin-top: 176px;
+  }
+
+  .page2__header h2,
+  .page2__header p {
+    text-align: center;
+  }
+
+  .page2__content .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 977px;
+  }
+
+  .page2__content .card {
+    margin-top: 30px;
+  }
+
+  .page3 {
+    width: 100%; height: 1646px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page3__header {
+    width: 35%; height: 146px;
+  }
+
+  .page3__header h2,
+  .page3__header p {
+    text-align: center;
+  }
+
+  .page3__content .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 677px;
+  }
+
+  .page3__content .card {
+    margin-top: 30px;
+  }
+
+  .page4 {
+    width: 100%; height: 1646px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page4__header {
+    width: 35%; height: 146px;
+    margin-top: -300px;
+  }
+
+  .page4__header h2,
+  .page4__header p {
+    text-align: center;
+  }
+
+  .page4__content .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .content {
+    margin-bottom: -100px;
+  }
+
+  .page5 {
+    width: 100%; height: 2500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page5__header {
+    width: 35%; height: 146px;
+    margin-top: -100px;
+  }
+
+  .page5__header h2,
+  .page5__header p {
+    text-align: center;
+  }
+
+  .page5 .boxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page5 .box, 
+  .page5 .box__main {
+    margin-top: 30px;
+  }
+
+  .page6__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .contentt__left,
+  .contentt__right {
+    width: 100%; height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contentt__left h2,
+  .contentt__left p {
+    display: none;
+  }
+
+  .contentt__left h3 {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: montserrat;
+    letter-spacing: .1px;
+    text-align: center;
+    margin-right: 120px;
+    width: 258px;
+  }
+
+  .contentt__right input {
+    margin-left: 200px;
+    margin-top: -150px;
+  }
+
+  .contentt__right .subscribe {
+    margin-top: -150px;
+    margin-left: 2px;
+  }
+
+  .page7 {
+    width: 100%; height: 1000px;
+  }
+
+  .content__row .page7__boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .page7__box {
+    margin-top: 60px;
+  }
 }
